@@ -11,6 +11,13 @@ body {
 .left-panel {
     background-color: #1f2a40;
 }
+/* Quadrado representativo da Logo no Header */
+.logo-square {
+    width: 40px;
+    height: 40px;
+    background-color: #212c42;
+    border-radius: 4px;
+}
 
 .right-panel {
     background-color: #2b3b5a;
