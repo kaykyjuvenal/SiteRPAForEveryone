@@ -26,7 +26,7 @@ body {
 .nav-btn {
     color: #ffffff;
     text-decoration: none;
-    padding: 2%; /* Reduzido para ficar mais próximo */
+    padding: 6px 12px; /* Reduzido para ficar mais próximo */
     border-radius: 4px;
     font-size: 0.95rem;
     transition: background-color 0.3s;
