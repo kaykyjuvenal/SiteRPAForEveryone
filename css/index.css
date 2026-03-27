@@ -23,10 +23,11 @@ body {
 }
 
 /* Menu de Navegação Superior */
+/* Menu de Navegação Superior (Ajustado) */
 .nav-btn {
     color: #ffffff;
     text-decoration: none;
-    padding: 8px 16px;
+    padding: 6px 12px; /* Reduzido para ficar mais próximo */
     border-radius: 4px;
     font-size: 0.95rem;
     transition: background-color 0.3s;
@@ -40,6 +41,11 @@ body {
     background-color: #28395a;
 }
 
+/* Nova classe para unificar o alinhamento dos textos */
+.content-wrapper {
+    max-width: 850px; /* Limita a largura para que o texto quebre naturalmente igual ao Figma */
+    text-align: left; /* Garante que tudo comece alinhado à esquerda */
+}
 /* Quadrantes de 25% da altura */
 .quadrant {
     height: 25%;
