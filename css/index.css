@@ -180,7 +180,6 @@ body {
     height: 100%;
     object-fit: cover; 
 }
-
 /* --- ESTILOS DA PÁGINA DE CONTATO/EQUIPE --- */
 
 /* Cada card individual dos membros */
@@ -192,7 +191,7 @@ body {
 .team-photo-placeholder {
     width: 130px;
     height: 130px;
-    background-color: #d9d9d9; /* Cor cinza do Figma */
+    background-color: #d9d9d9;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -208,7 +207,7 @@ body {
 
 /* A caixa azul de "Entre em contato" abaixo da equipe */
 .contact-cta-box {
-    background-color: #1a2235; /* Azul escuro do header */
+    background-color: #1a2235;
     border: 1px solid rgba(255, 255, 255, 0.1);
     max-width: 800px;
     width: 100%;
