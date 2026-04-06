@@ -1,112 +1,19 @@
-/* Reseta margens e fontes básicas */
-body {
-    font-family: 'Lexend', sans-serif;
-    background-color: #121826;
-    font-size: small; /* Cor de fundo base escura */
-}
-
-/* Paleta de Cores do Figma */
-.header-bg, .footer-bg {
-    background-color: #1a2235;
-}
-
-.left-panel {
-    background-color: #1f2a40;
-}
-
-/* Quadrado representativo da Logo no Header */
-.logo-square {
-    width: 40px;
-    height: 40px;
-    background-color: #212c42;
-    border-radius: 4px;
-}
-
-.right-panel {
-    background-color: #2b3b5a;
-}
-
-/* Estilo do Logo/Caixa de Marca */
-.brand-box {
-    background-color: #212c42;
-    border-radius: 4px;
-}
-
-.nav-btn {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 6px 12px; /* Reduzido para ficar mais próximo */
-    border-radius: 4px;
-    font-size: 0.95rem;
-    transition: background-color 0.3s;
-}
-
-.nav-btn:hover {
-    background-color: #212c42;
-}
-
-.nav-btn.active {
-    background-color: #28395a;
-}
-
-/* Nova classe para unificar o alinhamento dos textos */
+/* Alterado para permitir que o texto fique no centro */
 .content-wrapper {
-    max-width: 850px; /* Limita a largura para que o texto quebre naturalmente igual ao Figma */
-    text-align: left; /* Garante que tudo comece alinhado à esquerda */
+    max-width: 850px; 
+    text-align: center; /* Mudou de left para center */
 }
 
-/* Quadrantes de 25% da altura */
-.quadrant {
-    height: 25%;
-}
-
-/* Linha preta divisória entre os quadrantes */
-.border-black-bottom {
-    border-bottom: 2px solid #000000;
-}
-
-/* Listas customizadas (bullets) */
+/* Ajuste na lista para as bolinhas não se perderem ao centralizar */
 .custom-list {
     list-style-type: disc;
-    padding-left: 20px;
+    list-style-position: inside; /* Faz as bolinhas (bullets) acompanharem o texto centralizado */
+    padding-left: 0; /* Remove o recuo antigo da esquerda */
     line-height: 1.6;
 }
 
 .custom-list ul {
-    list-style-type: disc; /* Mantém as bolinhas nos sub-níveis */
+    list-style-type: disc; 
     margin-top: 5px;
-}
-
-/* Componentes do Carrossel (Esquerda) */
-.cursor-pointer {
-    cursor: pointer;
-    color: #121826 !important; /* Cor mais escura para as setas */
-    opacity: 0.5;
-}
-
-.carousel-dot {
-    width: 12px;
-    height: 12px;
-    background-color: #121826;
-    border-radius: 50%;
-    opacity: 0.5;
-    cursor: pointer;
-}
-
-.carousel-dot.active {
-    background-color: #3b5078;
-    opacity: 1;
-}
-
-/* Footer elements */
-.copyright-box {
-    background-color: #212c42;
-    border-radius: 4px;
-}
-
-.footer-square {
-    width: 40px;
-    height: 40px;
-    background-color: #212c42;
-    border-radius: 4px;
+    padding-left: 0;
 }
