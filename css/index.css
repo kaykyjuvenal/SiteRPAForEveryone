@@ -49,10 +49,16 @@ body {
     background-color: #28395a;
 }
 
-/* Nova classe para unificar o alinhamento dos textos */
+/* Tamanho exato e fixo da coluna de títulos baseado no maior texto */
+.title-column {
+    width: 170px;
+    flex-shrink: 0;
+}
+
+/* Alinhamento dos textos */
 .content-wrapper {
-    max-width: 850px; /* Limita a largura para que o texto quebre naturalmente igual ao Figma */
-    text-align: center; /* Atualizado para centralizar */
+    max-width: 850px; 
+    text-align: center; 
 }
 
 /* Quadrantes de 25% da altura */
@@ -69,7 +75,7 @@ body {
 .custom-list {
     list-style-type: disc;
     list-style-position: inside; /* Faz as bolinhas acompanharem o alinhamento central */
-    padding-left: 0; /* Remove a margem esquerda para focar no centro */
+    padding-left: 0;
     line-height: 1.6;
 }
 
