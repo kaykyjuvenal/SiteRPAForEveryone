@@ -146,33 +146,37 @@ body {
     max-height: 100%;
     object-fit: contain;
 }
-
+ 
 /* --- ESTILOS ESPECÍFICOS DA PÁGINA DE PRODUTOS --- */
 
-/* Controla a largura máxima do bloco de texto para ficar igual ao design e não esticar demais na tela toda */
+/* Controla a largura máxima da caixa de texto */
 .product-text {
     max-width: 900px;
     line-height: 1.6;
 }
 
+/* Nova classe para garantir o texto justificado (reto nas bordas) */
+.custom-justify {
+    text-align: justify;
+}
+
 /* Espaço reservado para as imagens em formato de banner/wide */
 .product-img-wrapper {
-    width: 800px; /* Largura do banner */
-    height: 250px; /* Altura do banner */
+    width: 800px;  /* Largura igual ao do design do Figma */
+    height: 250px; /* Altura para não tomar a tela inteira */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Borda temporária para você ver onde a imagem vai ficar. Apague quando colocar as imagens! */
+    /* Borda temporária (apague quando colocar as fotos de verdade) */
     border: 2px dashed rgba(255, 255, 255, 0.3); 
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 4px;
-    overflow: hidden; /* Corta o que sobrar da imagem */
+    overflow: hidden; /* Impede que a imagem vaze da caixa */
 }
 
-/* Faz com que a imagem cubra o espaço perfeitamente como um banner sem distorcer (esmagar) */
+/* Ajusta a foto para cobrir todo o banner sem ser achatada */
 .product-banner {
     width: 100%;
     height: 100%;
     object-fit: cover; 
 }
-
