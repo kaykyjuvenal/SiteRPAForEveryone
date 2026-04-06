@@ -2,7 +2,7 @@
 body {
     font-family: 'Lexend', sans-serif;
     background-color: #121826;
-    font-size: small; /* Cor de fundo base escura */
+    font-size: small;
 }
 
 /* Paleta de Cores do Figma */
@@ -49,17 +49,17 @@ body {
     background-color: #28395a;
 }
 
-/* Container do título com tamanho EXATO do maior título ("Objetivos Alcançados:") */
+/* Container do título com tamanho EXATO do maior título */
 .title-column {
     width: 180px;
     flex-shrink: 0;
 }
 
-/* Container dos bullet points: Tamanho TOTALMENTE FIXO, não estica nem encolhe */
+/* Container dos bullet points: Justificado e Fixo */
 .bullet-container {
     width: 850px; 
     flex-shrink: 0; 
-    text-align: center; 
+    text-align: justify; /* Justifica o texto distribuindo o espaço igualmente */
 }
 
 /* Quadrantes de 25% da altura */
@@ -72,11 +72,11 @@ body {
     border-bottom: 2px solid #000000;
 }
 
-/* Listas customizadas (bullets) */
+/* Listas customizadas (bullets) ajustadas para texto justificado */
 .custom-list {
     list-style-type: disc;
-    list-style-position: inside; /* Faz as bolinhas acompanharem o alinhamento central */
-    padding-left: 0; 
+    list-style-position: outside; /* Mantém a bolinha fora do bloco de texto para o alinhamento reto */
+    padding-left: 20px; /* Cria um pequeno espaço para a bolinha não grudar na borda invisível */
     line-height: 1.6;
 }
 
