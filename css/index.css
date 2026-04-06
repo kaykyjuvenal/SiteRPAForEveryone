@@ -4,6 +4,7 @@ body {
     background-color: #121826;
     font-size: small; /* Cor de fundo base escura */
 }
+
 /* Paleta de Cores do Figma */
 .header-bg, .footer-bg {
     background-color: #1a2235;
@@ -12,6 +13,7 @@ body {
 .left-panel {
     background-color: #1f2a40;
 }
+
 /* Quadrado representativo da Logo no Header */
 .logo-square {
     width: 40px;
@@ -29,7 +31,6 @@ body {
     background-color: #212c42;
     border-radius: 4px;
 }
-
 
 .nav-btn {
     color: #ffffff;
@@ -53,6 +54,7 @@ body {
     max-width: 850px; /* Limita a largura para que o texto quebre naturalmente igual ao Figma */
     text-align: left; /* Garante que tudo comece alinhado à esquerda */
 }
+
 /* Quadrantes de 25% da altura */
 .quadrant {
     height: 25%;
