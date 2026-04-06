@@ -4,6 +4,7 @@ body {
     background-color: #121826;
     font-size: small; /* Cor de fundo base escura */
 }
+
 /* Paleta de Cores do Figma */
 .header-bg, .footer-bg {
     background-color: #1a2235;
@@ -12,6 +13,7 @@ body {
 .left-panel {
     background-color: #1f2a40;
 }
+
 /* Quadrado representativo da Logo no Header */
 .logo-square {
     width: 40px;
@@ -29,7 +31,6 @@ body {
     background-color: #212c42;
     border-radius: 4px;
 }
-
 
 .nav-btn {
     color: #ffffff;
@@ -51,8 +52,9 @@ body {
 /* Nova classe para unificar o alinhamento dos textos */
 .content-wrapper {
     max-width: 850px; /* Limita a largura para que o texto quebre naturalmente igual ao Figma */
-    text-align: left; /* Garante que tudo comece alinhado à esquerda */
+    text-align: center; /* Atualizado para centralizar */
 }
+
 /* Quadrantes de 25% da altura */
 .quadrant {
     height: 25%;
@@ -66,13 +68,15 @@ body {
 /* Listas customizadas (bullets) */
 .custom-list {
     list-style-type: disc;
-    padding-left: 20px;
+    list-style-position: inside; /* Faz as bolinhas acompanharem o alinhamento central */
+    padding-left: 0; /* Remove a margem esquerda para focar no centro */
     line-height: 1.6;
 }
 
 .custom-list ul {
-    list-style-type: disc; /* Mantém as bolinhas nos sub-níveis */
+    list-style-type: disc; 
     margin-top: 5px;
+    padding-left: 0;
 }
 
 /* Componentes do Carrossel (Esquerda) */
