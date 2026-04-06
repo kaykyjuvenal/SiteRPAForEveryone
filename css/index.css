@@ -1,7 +1,8 @@
 /* Reseta margens e fontes básicas */
 body {
     font-family: 'Lexend', sans-serif;
-    background-color: #121826; /* Cor de fundo base escura */
+    background-color: #121826;
+    font-size: small; /* Cor de fundo base escura */
 }
 /* Paleta de Cores do Figma */
 .header-bg, .footer-bg {
