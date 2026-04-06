@@ -120,3 +120,30 @@ body {
     border-radius: 4px;
 }
 
+/* --- ESTILOS ESPECÍFICOS DA PÁGINA DE PARCEIROS --- */
+
+/* Fundo da área central de parceiros */
+.partners-bg {
+    background-color: #2b3b5a;
+}
+
+/* Espaço reservado para os logos (IFSP e Automation Edge) */
+.partner-img-wrapper {
+    width: 280px;  /* Largura da caixa da imagem */
+    height: 180px; /* Altura da caixa da imagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Essa borda tracejada é só para você ver onde a imagem vai ficar. Pode apagar depois! */
+    border: 2px dashed rgba(255, 255, 255, 0.3); 
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* Garante que a imagem inserida não passe do tamanho da caixa e não fique esticada/feia */
+.partner-logo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
