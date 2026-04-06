@@ -147,3 +147,32 @@ body {
     object-fit: contain;
 }
 
+/* --- ESTILOS ESPECÍFICOS DA PÁGINA DE PRODUTOS --- */
+
+/* Controla a largura máxima do bloco de texto para ficar igual ao design e não esticar demais na tela toda */
+.product-text {
+    max-width: 900px;
+    line-height: 1.6;
+}
+
+/* Espaço reservado para as imagens em formato de banner/wide */
+.product-img-wrapper {
+    width: 800px; /* Largura do banner */
+    height: 250px; /* Altura do banner */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Borda temporária para você ver onde a imagem vai ficar. Apague quando colocar as imagens! */
+    border: 2px dashed rgba(255, 255, 255, 0.3); 
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden; /* Corta o que sobrar da imagem */
+}
+
+/* Faz com que a imagem cubra o espaço perfeitamente como um banner sem distorcer (esmagar) */
+.product-banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
