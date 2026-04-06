@@ -35,7 +35,7 @@ body {
 .nav-btn {
     color: #ffffff;
     text-decoration: none;
-    padding: 6px 12px; /* Reduzido para ficar mais próximo */
+    padding: 6px 12px; 
     border-radius: 4px;
     font-size: 0.95rem;
     transition: background-color 0.3s;
@@ -49,15 +49,16 @@ body {
     background-color: #28395a;
 }
 
-/* Tamanho exato e fixo da coluna de títulos baseado no maior texto */
+/* Container do título com tamanho EXATO do maior título ("Objetivos Alcançados:") */
 .title-column {
-    width: 170px;
+    width: 180px;
     flex-shrink: 0;
 }
 
-/* Alinhamento dos textos */
-.content-wrapper {
-    max-width: 850px; 
+/* Container dos bullet points: Tamanho TOTALMENTE FIXO, não estica nem encolhe */
+.bullet-container {
+    width: 850px; 
+    flex-shrink: 0; 
     text-align: center; 
 }
 
@@ -75,7 +76,7 @@ body {
 .custom-list {
     list-style-type: disc;
     list-style-position: inside; /* Faz as bolinhas acompanharem o alinhamento central */
-    padding-left: 0;
+    padding-left: 0; 
     line-height: 1.6;
 }
 
@@ -88,7 +89,7 @@ body {
 /* Componentes do Carrossel (Esquerda) */
 .cursor-pointer {
     cursor: pointer;
-    color: #121826 !important; /* Cor mais escura para as setas */
+    color: #121826 !important; 
     opacity: 0.5;
 }
 
