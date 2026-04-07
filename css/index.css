@@ -49,12 +49,6 @@ body {
     background-color: #28395a;
 }
 
-/* Container do título com tamanho EXATO do maior título */
-.title-column {
-    width: 180px;
-    flex-shrink: 0;
-}
-
 /* Container dos bullet points: Justificado e Fixo */
 .bullet-container {
     width: 850px; 
@@ -62,9 +56,27 @@ body {
     text-align: justify; /* Justifica o texto distribuindo o espaço igualmente */
 }
 
-/* Quadrantes de 25% da altura */
+/* Garante que o quadrante ignore o tamanho do texto e foque na altura */
 .quadrant {
-    height: 25%;
+    height: 25% !important;
+    max-height: 25%;
+    overflow: hidden; /* Evita que textos muito longos quebrem o layout */
+    display: flex;
+}
+
+/* Ajuste das colunas internas para não quebrarem o alinhamento */
+.title-column {
+    width: 20%;
+    height: 100%;
+    flex-shrink: 0;
+    border-right: 1px solid rgba(0,0,0,0.1);
+}
+
+.bullet-container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center; /* Centraliza o texto verticalmente dentro do quadrante */
 }
 
 /* Linha preta divisória entre os quadrantes */
