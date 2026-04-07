@@ -12,7 +12,7 @@
     
     <link rel="stylesheet" href="css/index.css">
 </head>
-<body class="d-flex flex-column vh-100">
+<body class="d-flex flex-column min-vh-100">
 
     <header class="header-bg py-3 px-4 flex-shrink-0">
         <nav class="d-flex align-items-center justify-content-between w-100 flex-nowrap overflow-auto">
@@ -25,7 +25,7 @@
             
             <a href="index.html" class="nav-btn text-nowrap">Inicial</a>
             <a href="produtos.html" class="nav-btn active text-nowrap">Produtos</a>
-            <a href="serviços.html" class="nav-btn text-nowrap">Serviços</a>
+            <a href="servicos.html" class="nav-btn text-nowrap">Serviços</a>
             <a href="parceiros.html" class="nav-btn text-nowrap">Parceiros</a>
             <a href="contato.html" class="nav-btn text-nowrap">Contato</a>
             <a href="licenciamento.html" class="nav-btn text-nowrap">Licenciamento</a>
@@ -33,8 +33,9 @@
         </nav>
     </header>
 
-    <main class="d-flex flex-column flex-grow-1 align-items-center py-5 overflow-auto partners-bg">
-        <div class="product-block w-100 d-flex flex-column align-items-center pb-3">
+    <main class="d-flex flex-column flex-grow-1 align-items-center pt-5 pb-0 partners-bg">
+        
+        <div class="product-block w-100 d-flex flex-column align-items-center pb-0 mb-0">
             <div class="product-text text-white px-4 mb-4">
                 <h3 class="fs-4 fw-bold mb-3 text-center text-nowrap">Workshops Completos de Inovação com RPA - Demonstração de uso de Ferramenta</h3>
                 
@@ -42,14 +43,14 @@
             Uma exibição completa da ferramenta parceira Automation Edge demonstrando a aplicação da modelagem de processos dentro das ferramentas e demonstração de casos de uso, além de treinamentos nos dois conceitos citados anteriormente. Para qualquer informação adicional, basta clicar na opção de contato via WhatsApp no ícone no fim da página.
                 </p>
             </div>
-            <div class="product-img-wrapper">
+            <div class="product-img-wrapper w-100 d-flex justify-content-center">
                 <img src="" alt="Apresentação em auditório" class="product-banner">
             </div>
         </div>
 
     </main>
     
-    <footer class="footer-bg py-3 px-4 d-flex align-items-center justify-content-between flex-shrink-0">
+    <footer class="footer-bg py-3 px-4 d-flex align-items-center justify-content-between flex-shrink-0 mt-auto">
         <div class="d-flex align-items-center gap-3">
             <div class="footer-square"></div>
             <div class="brand-box text-white py-2 px-3 fw-bold">
@@ -67,3 +68,7 @@
             <div class="footer-square"></div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
