@@ -11,8 +11,26 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
     
     <link rel="stylesheet" href="css/index.css">
+    <style>
+        /* Padronização para centralizar os ícones nos quadrados do footer */
+        .footer-square {
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: white !important;
+            transition: opacity 0.3s;
+        }
+        .footer-square:hover {
+            opacity: 0.8;
+        }
+        .footer-square i {
+            font-size: 1.2rem;
+        }
+    </style>
 </head>
-<body class="d-flex flex-column min-vh-100"> <header class="header-bg py-2 px-4 flex-shrink-0">
+<body class="d-flex flex-column min-vh-100"> 
+    <header class="header-bg py-2 px-4 flex-shrink-0">
         <nav class="d-flex align-items-center justify-content-between w-100 flex-nowrap overflow-auto">
             
             <img src="logo.png" alt="Logo RPA For Everyone" class="flex-shrink-0" style="height: 65px; width: auto; object-fit: contain;">
@@ -63,9 +81,15 @@
         </div>
 
         <div class="d-flex gap-3">
-            <div class="footer-square"></div>
-            <div class="footer-square"></div>
-            <div class="footer-square"></div>
+            <a href="https://wa.me/5511999999999" target="_blank" class="footer-square">
+                <i class="bi bi-whatsapp"></i>
+            </a>
+            <a href="https://instagram.com/rpaforeveryone" target="_blank" class="footer-square">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="mailto:foreveryonepa@gmail.com" class="footer-square">
+                <i class="bi bi-envelope-plus-fill"></i>
+            </a>
         </div>
     </footer>
 
