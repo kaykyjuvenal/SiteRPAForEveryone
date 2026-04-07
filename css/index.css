@@ -86,27 +86,30 @@ body {
 /* Listas customizadas (bullets) ajustadas para texto justificado */
 .custom-list {
     list-style-type: disc;
-    list-style-position: outside; /* Mantém a bolinha fora do bloco de texto para o alinhamento reto */
-    padding-left: 20px; /* Cria um pequeno espaço para a bolinha não grudar na borda invisível */
+    list-style-position: outside;
+    /* Substituído 20px por vw para escalar a distância do bullet */
+    padding-left: 1.5vw; 
     line-height: 1.6;
 }
 
 .custom-list ul {
     list-style-type: disc; 
-    margin-top: 5px;
+    /* Substituído 5px por vh */
+    margin-top: 0.5vh;
     padding-left: 0;
 }
 
 /* Componentes do Carrossel (Esquerda) */
 .cursor-pointer {
     cursor: pointer;
-    color: #121826 !important; 
+    color: #121826; 
     opacity: 0.5;
 }
 
 .carousel-dot {
-    width: 12px;
-    height: 12px;
+    /* Substituído 12px por vw */
+    width: 1vw;
+    height: 1vw;
     background-color: #121826;
     border-radius: 50%;
     opacity: 0.5;
@@ -121,14 +124,16 @@ body {
 /* Footer elements */
 .copyright-box {
     background-color: #212c42;
-    border-radius: 4px;
+    /* Substituído 4px por vw */
+    border-radius: 0.3vw;
 }
 
 .footer-square {
-    width: 40px;
-    height: 40px;
+    /* Substituído 40px por vw */
+    width: 2.5vw;
+    height: 2.5vw;
     background-color: #212c42;
-    border-radius: 4px;
+    border-radius: 0.3vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -149,15 +154,16 @@ body {
 
 /* Espaço reservado para os logos (IFSP e Automation Edge) */
 .partner-img-wrapper {
-    width: 280px;  /* Largura da caixa da imagem */
-    height: 180px; /* Altura da caixa da imagem */
+    /* Substituído 280px e 180px por unidades de Viewport */
+    width: 20vw;  
+    height: 20vh; 
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Essa borda tracejada é só para você ver onde a imagem vai ficar. Pode apagar depois! */
-    border: 2px dashed rgba(255, 255, 255, 0.3); 
-    border-radius: 8px;
-    padding: 20px;
+    /* Borda tracejada adaptada de px para vw */
+    border: 0.2vw dashed rgba(255, 255, 255, 0.3); 
+    border-radius: 0.6vw;
+    padding: 1.5vw;
 }
 
 /* Garante que a imagem inserida não passe do tamanho da caixa e não fique esticada/feia */
@@ -171,7 +177,8 @@ body {
 
 /* Controla a largura máxima da caixa de texto */
 .product-text {
-    max-width: 900px;
+    /* Substituído 900px por % em relação à tela/container */
+    max-width: 75%; 
     line-height: 1.6;
 }
 
@@ -182,16 +189,16 @@ body {
 
 /* Espaço reservado para as imagens em formato de banner/wide */
 .product-img-wrapper {
-    width: 800px;  /* Largura igual ao do design do Figma */
-    height: 250px; /* Altura para não tomar a tela inteira */
+    /* Substituído 800px e 250px por VW e VH */
+    width: 60vw;  
+    height: 25vh; 
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Borda temporária (apague quando colocar as fotos de verdade) */
-    border: 2px dashed rgba(255, 255, 255, 0.3); 
+    border: 0.2vw dashed rgba(255, 255, 255, 0.3); 
     background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    overflow: hidden; /* Impede que a imagem vaze da caixa */
+    border-radius: 0.3vw;
+    overflow: hidden;
 }
 
 /* Ajusta a foto para cobrir todo o banner sem ser achatada */
@@ -205,13 +212,15 @@ body {
 
 /* Cada card individual dos membros */
 .team-card {
-    width: 130px;
+    /* Substituído 130px por vw */
+    width: 10vw;
 }
 
 /* O quadrado cinza da foto */
 .team-photo-placeholder {
-    width: 130px;
-    height: 130px;
+    /* Mantém as fotos perfeitamente quadradas com base na largura da tela */
+    width: 10vw;
+    height: 10vw;
     background-color: #d9d9d9;
     display: flex;
     justify-content: center;
@@ -229,8 +238,9 @@ body {
 /* A caixa azul de "Entre em contato" abaixo da equipe */
 .contact-cta-box {
     background-color: #1a2235;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    max-width: 800px;
+    border: 0.1vw solid rgba(255, 255, 255, 0.1);
+    /* Substituído 800px por % para fluidez */
+    max-width: 70%;
     width: 100%;
-    border-radius: 4px;
+    border-radius: 0.3vw;
 }
