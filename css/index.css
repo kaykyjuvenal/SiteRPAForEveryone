@@ -244,6 +244,66 @@ body {
     width: 100%;
     border-radius: 0.3vw;
 }
+/* ==========================================================
+   RESPONSIVIDADE DOS TEXTOS DA PÁGINA DE CONTATO/EQUIPE
+========================================================== */
+
+/* Suaviza a transição caso a janela mude de tamanho */
+.team-card p, 
+.contact-cta-box p, 
+main h2 {
+    transition: font-size 0.3s ease, margin 0.3s ease, padding 0.3s ease;
+}
+
+/* Quando a tela tiver menos de 850px de altura (Notebooks padrão) */
+@media (max-height: 850px) {
+    /* Diminui o título 'Equipe' e o espaço abaixo dele */
+    main h2.fs-3 {
+        font-size: 1.5rem !important;
+        margin-bottom: 3vh !important; 
+    }
+
+    /* Reduz os nomes e cargos da equipe */
+    .team-card p.small {
+        font-size: 0.75rem; 
+    }
+
+    /* Reduz o texto da caixa azul de contato */
+    .contact-cta-box p {
+        font-size: 0.85rem; 
+    }
+
+    /* Diminui o padding interno da caixa de contato para economizar espaço */
+    .contact-cta-box {
+        padding: 2vh 3vw !important;
+    }
+}
+
+/* Quando a tela for extremamente baixa (menos de 650px) */
+@media (max-height: 650px) {
+    /* Deixa o título principal ainda menor */
+    main h2.fs-3 {
+        font-size: 1.25rem !important;
+        margin-bottom: 2vh !important;
+    }
+
+    /* Reduz a fonte da equipe ao mínimo legível */
+    .team-card p.small {
+        font-size: 0.65rem; 
+        line-height: 1.2;
+    }
+
+    /* Deixa o texto de contato bem compacto */
+    .contact-cta-box p {
+        font-size: 0.75rem; 
+    }
+    
+    /* Espaço entre os cartões (gap) diminui para os itens subirem um pouco */
+    .w-80.d-flex.gap-4 {
+        gap: 1.5vw !important;
+        margin-bottom: 1.5vh !important;
+    }
+}
 
 /* --- RESPONSIVIDADE DO TEXTO DE LICENCIAMENTO BASEADA NA ALTURA --- */
 
