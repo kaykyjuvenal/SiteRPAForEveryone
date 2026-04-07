@@ -49,20 +49,13 @@ body {
     background-color: #28395a;
 }
 
-/* Container dos bullet points: Justificado e Fixo */
-.bullet-container {
-    width: 850px; 
-    flex-shrink: 0; 
-    text-align: justify; /* Justifica o texto distribuindo o espaço igualmente */
-}
-
 /* Garante que o quadrante ignore o tamanho do texto e foque na altura */
 .quadrant {
-    height: 25% ;
-    max-height: 25%;
+    flex: 1; /* Esta é a mágica que substitui o height: 25% */
     overflow: hidden; /* Evita que textos muito longos quebrem o layout */
     display: flex;
 }
+
 /* Define a largura de 80% que você solicitou */
 .w-80 {
     width: 80%;
@@ -76,11 +69,13 @@ body {
     border-right: 1px solid rgba(0,0,0,0.1);
 }
 
+/* Container dos bullet points unificado */
 .bullet-container {
     width: 80%;
     height: 100%;
     display: flex;
     align-items: center; /* Centraliza o texto verticalmente dentro do quadrante */
+    text-align: justify; /* Justifica o texto distribuindo o espaço igualmente */
 }
 
 /* Linha preta divisória entre os quadrantes */
@@ -140,9 +135,11 @@ body {
     text-decoration: none;
     color: white;
     transition: opacity 0.3s;
-    .footer-square:hover {
-         opacity: 0.8;
-    }
+}
+
+/* Correção de sintaxe: o hover fica fora da classe principal no CSS puro */
+.footer-square:hover {
+    opacity: 0.8;
 }
 
 /* Fundo da área central de parceiros */
