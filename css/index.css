@@ -58,10 +58,14 @@ body {
 
 /* Garante que o quadrante ignore o tamanho do texto e foque na altura */
 .quadrant {
-    height: 25% !important;
+    height: 25% ;
     max-height: 25%;
     overflow: hidden; /* Evita que textos muito longos quebrem o layout */
     display: flex;
+}
+/* Define a largura de 80% que você solicitou */
+.w-80 {
+    width: 80%;
 }
 
 /* Ajuste das colunas internas para não quebrarem o alinhamento */
