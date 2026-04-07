@@ -9,22 +9,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css">
+    
+    <link rel="stylesheet" href="index.css">
 </head>
-<body class="d-flex flex-column vh-100">
+<body class="d-flex flex-column min-vh-100">
 
-    <header class="header-bg py-3 px-4">
+    <header class="header-bg py-2 px-4 flex-shrink-0">
         <nav class="d-flex align-items-center justify-content-between w-100 flex-nowrap overflow-auto">
             
-            <div class="logo-square flex-shrink-0"></div>
+            <img src="logo.png" alt="Logo RPA For Everyone" class="flex-shrink-0" style="height: 65px; width: auto; object-fit: contain;">
             
-            <div class="brand-box text-white py-2 px-3 fw-bold text-nowrap">
+            <div class="brand-box text-white py-2 px-3 fw-bold text-nowrap mx-3">
                 RPA For Everyone
             </div>
             
             <a href="index.html" class="nav-btn text-nowrap">Inicial</a>
             <a href="produtos.html" class="nav-btn text-nowrap">Produtos</a>
-            <a href="serviços.html" class="nav-btn text-nowrap">Serviços</a>
+            <a href="servicos.html" class="nav-btn text-nowrap">Serviços</a>
             <a href="parceiros.html" class="nav-btn active text-nowrap">Parceiros</a>
             <a href="contato.html" class="nav-btn text-nowrap">Contato</a>
             <a href="licenciamento.html" class="nav-btn text-nowrap">Licenciamento</a>
@@ -32,27 +33,29 @@
         </nav>
     </header>
 
-    <main class="d-flex flex-column flex-grow-1 align-items-center justify-content-start pt-5 partners-bg">
+    <main class="d-flex flex-column flex-grow-1 align-items-center justify-content-start pt-5 partners-bg pb-5">
         
-        <h2 class="text-white mb-5 fw-normal fs-4">Marcas Parceiras</h2>
+        <h2 class="text-white mb-5 fw-bold fs-3">Marcas Parceiras</h2>
         
-        <div class="d-flex justify-content-center align-items-center gap-5 mt-4">
+        <div class="d-flex flex-wrap justify-content-center align-items-center gap-5 mt-4 px-3">
             
-            <div class="partner-img-wrapper">
-                <img src="" alt="Logo IFSP" class="partner-logo">
+            <div class="bg-white rounded-4 shadow-lg d-flex justify-content-center align-items-center p-4" style="width: 280px; height: 280px;">
+                <img src="WhatsApp_I inst. federal.png" alt="Logo IFSP" class="img-fluid" style="max-height: 100%; max-width: 100%; object-fit: contain;">
             </div>
 
-            <div class="partner-img-wrapper">
-                <img src="" alt="Logo Automation Edge" class="partner-logo">
+            <div class="bg-white rounded-4 shadow-lg d-flex justify-content-center align-items-center p-4" style="width: 280px; height: 280px;">
+                <img src="WhatsApp_Iautomation edge.png" alt="Logo Automation Edge" class="img-fluid" style="max-height: 100%; max-width: 100%; object-fit: contain;">
             </div>
 
         </div>
 
     </main>
     
-    <footer class="footer-bg py-3 px-4 d-flex align-items-center justify-content-between">
+    <footer class="footer-bg py-3 px-4 d-flex align-items-center justify-content-between flex-shrink-0 mt-auto">
         <div class="d-flex align-items-center gap-3">
-            <div class="footer-square"></div>
+            
+            <img src="logo.png" alt="Logo RPA For Everyone" style="height: 50px; width: auto; object-fit: contain;">
+            
             <div class="brand-box text-white py-2 px-3 fw-bold">
                 RPA For Everyone
             </div>
