@@ -2,24 +2,19 @@
 body {
     font-family: 'Lexend', sans-serif;
     background-color: #121826;
-    font-size: medium;
+    /* Fonte escala baseada na largura da tela */
+    font-size: calc(0.8rem + 0.3vw); 
+    margin: 0;
+    overflow: hidden; /* Impede scroll indesejado em resoluções altas */
 }
 
-/* Paleta de Cores do Figma */
+/* Paleta de Cores */
 .header-bg, .footer-bg {
     background-color: #1a2235;
 }
 
 .left-panel {
     background-color: #1f2a40;
-}
-
-/* Quadrado representativo da Logo no Header */
-.logo-square {
-    width: 40px;
-    height: 40px;
-    background-color: #212c42;
-    border-radius: 4px;
 }
 
 .right-panel {
@@ -29,64 +24,54 @@ body {
 /* Estilo do Logo/Caixa de Marca */
 .brand-box {
     background-color: #212c42;
-    border-radius: 4px;
+    border-radius: 0.5vw;
 }
 
 .nav-btn {
     color: #ffffff;
     text-decoration: none;
-    padding: 6px 12px; 
-    border-radius: 4px;
-    font-size: 0.95rem;
+    padding: 0.5vh 1vw; 
+    border-radius: 0.3vw;
+    font-size: 0.9rem;
     transition: background-color 0.3s;
 }
 
-.nav-btn:hover {
-    background-color: #212c42;
-}
+/* --- AJUSTES DE ESTRUTURA FLUIDA --- */
 
-.nav-btn.active {
-    background-color: #28395a;
-}
-
-/* Container do título com tamanho EXATO do maior título */
+/* Substitui os 180px fixos por 15% da largura da coluna da direita */
 .title-column {
-    width: 180px;
+    width: 20%; 
     flex-shrink: 0;
 }
 
-/* Container dos bullet points: Justificado e Fixo */
+/* Substitui os 850px fixos por 75% da largura disponível */
 .bullet-container {
-    width: 850px; 
+    width: 75%; 
     flex-shrink: 0; 
-    text-align: justify; /* Justifica o texto distribuindo o espaço igualmente */
+    text-align: justify;
 }
 
-/* Quadrantes de 25% da altura */
+/* Quadrantes ocupam exatamente 25% da altura do main */
 .quadrant {
-    height: 25%;
+    height: 25% !important;
+    display: flex;
+    align-items: center;
 }
 
-/* Linha preta divisória entre os quadrantes */
 .border-black-bottom {
-    border-bottom: 2px solid #000000;
+    border-bottom: 0.2vh solid #000000;
 }
 
-/* Listas customizadas (bullets) ajustadas para texto justificado */
+/* Listas customizadas */
 .custom-list {
     list-style-type: disc;
-    list-style-position: outside; /* Mantém a bolinha fora do bloco de texto para o alinhamento reto */
-    padding-left: 20px; /* Cria um pequeno espaço para a bolinha não grudar na borda invisível */
-    line-height: 1.6;
+    list-style-position: outside;
+    padding-left: 2vw; 
+    line-height: 1.5;
+    margin-bottom: 0;
 }
 
-.custom-list ul {
-    list-style-type: disc; 
-    margin-top: 5px;
-    padding-left: 0;
-}
-
-/* Componentes do Carrossel (Esquerda) */
+/* Componentes do Carrossel */
 .cursor-pointer {
     cursor: pointer;
     color: #121826 !important; 
@@ -94,131 +79,73 @@ body {
 }
 
 .carousel-dot {
-    width: 12px;
-    height: 12px;
+    width: 1vw;
+    height: 1vw;
+    min-width: 10px;
+    min-height: 10px;
     background-color: #121826;
     border-radius: 50%;
     opacity: 0.5;
     cursor: pointer;
 }
 
-.carousel-dot.active {
-    background-color: #3b5078;
-    opacity: 1;
-}
-
 /* Footer elements */
 .copyright-box {
     background-color: #212c42;
-    border-radius: 4px;
+    border-radius: 0.4vw;
 }
 
 .footer-square {
-    width: 40px;
-    height: 40px;
+    width: 3vw;
+    height: 3vw;
+    min-width: 35px;
+    min-height: 35px;
     background-color: #212c42;
-    border-radius: 4px;
+    border-radius: 0.4vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-decoration: none;
     color: white;
-    transition: opacity 0.3s;
-    .footer-square:hover {
-         opacity: 0.8;
-    }
-}
-/* --- ESTILOS ESPECÍFICOS DA PÁGINA DE PARCEIROS --- */
-
-/* Fundo da área central de parceiros */
-.partners-bg {
-    background-color: #2b3b5a;
 }
 
-/* Espaço reservado para os logos (IFSP e Automation Edge) */
+/* --- PÁGINA DE PARCEIROS (Responsivo) --- */
 .partner-img-wrapper {
-    width: 280px;  /* Largura da caixa da imagem */
-    height: 180px; /* Altura da caixa da imagem */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* Essa borda tracejada é só para você ver onde a imagem vai ficar. Pode apagar depois! */
-    border: 2px dashed rgba(255, 255, 255, 0.3); 
-    border-radius: 8px;
-    padding: 20px;
+    width: 20vw;
+    height: 25vh;
+    border: 0.2vw dashed rgba(255, 255, 255, 0.3); 
+    border-radius: 1vw;
+    padding: 2vh;
 }
 
-/* Garante que a imagem inserida não passe do tamanho da caixa e não fique esticada/feia */
-.partner-logo {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-}
- 
-/* --- ESTILOS ESPECÍFICOS DA PÁGINA DE PRODUTOS --- */
-
-/* Controla a largura máxima da caixa de texto */
+/* --- PÁGINA DE PRODUTOS (Responsivo) --- */
 .product-text {
-    max-width: 900px;
-    line-height: 1.6;
+    max-width: 80%; /* Em vez de 900px */
 }
 
-/* Nova classe para garantir o texto justificado (reto nas bordas) */
-.custom-justify {
-    text-align: justify;
-}
-
-/* Espaço reservado para as imagens em formato de banner/wide */
 .product-img-wrapper {
-    width: 800px;  /* Largura igual ao do design do Figma */
-    height: 250px; /* Altura para não tomar a tela inteira */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* Borda temporária (apague quando colocar as fotos de verdade) */
-    border: 2px dashed rgba(255, 255, 255, 0.3); 
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    overflow: hidden; /* Impede que a imagem vaze da caixa */
+    width: 70vw;    /* Em vez de 800px */
+    height: 30vh;   /* Em vez de 250px */
+    border: 0.2vw dashed rgba(255, 255, 255, 0.3); 
+    border-radius: 0.5vw;
 }
 
-/* Ajusta a foto para cobrir todo o banner sem ser achatada */
-.product-banner {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-}
-
-/* --- ESTILOS DA PÁGINA DE CONTATO/EQUIPE --- */
-
-/* Cada card individual dos membros */
+/* --- PÁGINA DE CONTATO/EQUIPE --- */
 .team-card {
-    width: 130px;
+    width: 10vw;
+    min-width: 100px;
 }
 
-/* O quadrado cinza da foto */
 .team-photo-placeholder {
-    width: 130px;
-    height: 130px;
+    width: 10vw;
+    height: 10vw;
+    min-width: 100px;
+    min-height: 100px;
     background-color: #d9d9d9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
 }
 
-/* Garante que a foto preencha o quadrado */
-.team-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* A caixa azul de "Entre em contato" abaixo da equipe */
 .contact-cta-box {
     background-color: #1a2235;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    max-width: 800px;
-    width: 100%;
-    border-radius: 4px;
+    width: 70%; /* Em vez de 800px */
+    border-radius: 0.5vw;
+    padding: 2vh;
 }
