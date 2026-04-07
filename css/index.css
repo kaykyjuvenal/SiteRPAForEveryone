@@ -329,3 +329,49 @@ main h2 {
         line-height: 1.4;
     }
 }
+
+/* ==========================================================
+   RESPONSIVIDADE DA PÁGINA DE SERVIÇOS
+========================================================== */
+
+.servicos-text {
+    font-size: 1.25rem; /* Tamanho padrão igual ao fs-5 */
+    line-height: 1.6;
+    transition: font-size 0.3s ease, line-height 0.3s ease;
+}
+
+.title-responsive {
+    transition: font-size 0.3s ease, margin 0.3s ease;
+}
+
+/* Quando a tela tiver menos de 850px de altura (ex: Notebooks) */
+@media (max-height: 850px) {
+    .servicos-text {
+        font-size: 0.95rem; /* Diminui suavemente */
+        margin-bottom: 2vh !important; /* Aperta um pouco as margens */
+    }
+    
+    .title-responsive {
+        font-size: 1.25rem !important; /* Diminui os títulos (h3) */
+        margin-bottom: 3vh !important;
+    }
+    
+    .divisor-responsive {
+        margin-top: 2vh !important;
+        margin-bottom: 2vh !important;
+    }
+}
+
+/* Quando a tela for muito achatada (menos de 650px) */
+@media (max-height: 650px) {
+    .servicos-text {
+        font-size: 0.85rem; /* Equivale a um texto 'small' */
+        line-height: 1.4;
+        margin-bottom: 1.5vh !important;
+    }
+
+    .title-responsive {
+        font-size: 1.1rem !important;
+        margin-bottom: 2vh !important;
+    }
+}
