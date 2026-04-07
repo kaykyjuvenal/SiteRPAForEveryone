@@ -118,8 +118,16 @@ body {
     height: 40px;
     background-color: #212c42;
     border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    transition: opacity 0.3s;
+    .footer-square:hover {
+         opacity: 0.8;
+    }
 }
-
 /* --- ESTILOS ESPECÍFICOS DA PÁGINA DE PARCEIROS --- */
 
 /* Fundo da área central de parceiros */
