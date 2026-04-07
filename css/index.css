@@ -244,3 +244,28 @@ body {
     width: 100%;
     border-radius: 0.3vw;
 }
+
+/* --- RESPONSIVIDADE DO TEXTO DE LICENCIAMENTO BASEADA NA ALTURA --- */
+
+.licenciamento-text {
+    /* Tamanho padrão (equivalente ao fs-5 do Bootstrap) */
+    font-size: 1.25rem; 
+    line-height: 1.6;
+    transition: font-size 0.3s ease; /* Transição suave caso o usuário redimensione a janela */
+}
+
+/* Media query olhando para a ALTURA da tela, e não para a largura */
+@media (max-height: 850px) {
+    .licenciamento-text {
+        /* Diminui para o equivalente a 'small' se a tela for achatada */
+        font-size: 0.875rem; 
+    }
+}
+
+@media (max-height: 650px) {
+    .licenciamento-text {
+        /* Se a tela for EXTREMAMENTE achatada, diminui um pouco as margens para tentar salvar o layout */
+        font-size: 0.8rem; 
+        line-height: 1.4;
+    }
+}
