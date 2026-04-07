@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtos - RPA For Everyone</title>
+    <title>Pagina Inicial - RPA For Everyone</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -11,63 +11,115 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
     
     <link rel="stylesheet" href="css/index.css">
-    <style>
-        /* Centraliza os ícones dentro dos quadrados que você já tem no CSS */
-        .footer-square {
-            display: flex !important;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            transition: opacity 0.3s;
-        }
-        .footer-square i {
-            color: white; /* Cor do ícone */
-            font-size: 1.2rem; /* Tamanho do ícone */
-        }
-        .footer-square:hover {
-            opacity: 0.8;
-        }
-    </style>
 </head>
 <body class="d-flex flex-column min-vh-100">
 
-    <header class="header-bg py-2 px-4 flex-shrink-0">
+    <header class="header-bg py-2 px-4">
         <nav class="d-flex align-items-center justify-content-between w-100 flex-nowrap overflow-auto">
-            <img src="logo.png" alt="Logo RPA For Everyone" class="flex-shrink-0" style="height: 65px; width: auto; object-fit: contain;">
+            
+            <img src="logo.png" alt="Logo RPA For Everyone" class="flex-shrink-0" style="height: 80px; width: auto; object-fit: contain;">
             
             <div class="brand-box text-white py-2 px-3 fw-bold text-nowrap mx-3">
                 RPA For Everyone
             </div>
             
-            <a href="index.html" class="nav-btn text-nowrap">Inicial</a>
-            <a href="produtos.html" class="nav-btn active text-nowrap">Produtos</a>
-            <a href="serviços.html" class="nav-btn text-nowrap">Serviços</a>
+            <a href="index.html" class="nav-btn active text-nowrap">Inicial</a>
+            <a href="produtos.html" class="nav-btn text-nowrap">Produtos</a>
+            <a href="servicos.html" class="nav-btn text-nowrap">Serviços</a>
             <a href="parceiros.html" class="nav-btn text-nowrap">Parceiros</a>
             <a href="contato.html" class="nav-btn text-nowrap">Contato</a>
             <a href="licenciamento.html" class="nav-btn text-nowrap">Licenciamento</a>
+            
         </nav>
     </header>
 
-    <main class="d-flex flex-column flex-grow-1 align-items-center pt-5 pb-4 partners-bg">
-        <div class="product-block w-100 d-flex flex-column align-items-center pb-0 mb-0">
-            <div class="product-text text-white px-4 mb-4" style="max-width: 1000px;">
-                <h3 class="fs-4 fw-bold mb-3 text-center text-nowrap">Workshops Completos de Inovação com RPA - Demonstração de uso de Ferramenta</h3>
-                <p class="mb-4 text-light opacity-75 custom-justify fs-5">
-                    Uma exibição completa da ferramenta parceira Automation Edge demonstrando a aplicação da modelagem de processos dentro das ferramentas e demonstração de casos de uso, além de treinamentos nos dois conceitos citados anteriormente. Para qualquer informação adicional, basta clicar na opção de contato via WhatsApp no ícone no fim da página.
-                </p>
-            </div>
+    <main class="d-flex flex-grow-1">
+    
+        <div class="col-3 left-panel position-relative d-flex align-items-center justify-content-between px-3">
+            <i class="bi bi-caret-left-fill text-muted fs-1 cursor-pointer z-2"></i>
             
-            <div class="w-100 text-center px-3 mb-5">
-                <div class="mx-auto d-flex flex-column align-items-center justify-content-center overflow-hidden" style="max-width: 900px; width: 100%; height: 675px; border-radius: 8px;">
-                    <img src="workshope.jpeg" alt="Apresentação em auditório" class="shadow-lg" style="width: 100%; height: 100%; object-fit: cover;">
+            <i class="bi bi-caret-right-fill text-muted fs-1 cursor-pointer z-2"></i>
+            
+            <div class="position-absolute bottom-0 start-50 translate-middle-x mb-4 d-flex gap-3">
+                <div class="carousel-dot active"></div>
+                <div class="carousel-dot"></div>
+                <div class="carousel-dot"></div>
+                <div class="carousel-dot"></div>
+            </div>
+        </div>
+
+        <div class="col-9 right-panel d-flex flex-column">
+            
+            <div class="quadrant d-flex border-black-bottom w-100 h-auto py-4">
+                <div class="title-column d-flex align-items-center justify-content-center">
+                    <div class="text-white fs-5 text-center w-100">Missão:</div>
+                </div>
+                <div class="flex-grow-1 d-flex align-items-center justify-content-center">
+                    <div class="bullet-container text-white w-100">
+                        <ul class="custom-list mb-0 pe-4 fs-6">
+                            <li>
+                            Divulgar a Tecnologia via RPA para acesso a todo tipo de pessoa, independente de gênero, raça e condição financeira, atingindo todos os públicos possíveis através da ferramenta do nosso parceiro Automation Edge e do IFSP Campus São Carlos com extensão e preparação de novos profissionais.
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+
+            <div class="quadrant d-flex border-black-bottom w-100 h-auto py-4">
+                <div class="title-column d-flex align-items-center justify-content-center">
+                    <div class="text-white fs-5 text-center w-100">Valores:</div>
+                </div>
+                <div class="flex-grow-1 d-flex align-items-center justify-content-center">
+                    <div class="bullet-container text-white w-100">
+                        <ul class="custom-list mb-0 pe-4 fs-6">
+                            <li>Construção de Mão de Obra Qualificada</li>
+                            <li>Geração de Horas de Qualidade</li>
+                            <li>Expansão do Conceito RPA</li>
+                            <li>Inclusão e Diversidade</li>
+                            <li>Tratamento de Excelência com o Cliente</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quadrant d-flex border-black-bottom w-100 h-auto py-4">
+                <div class="title-column d-flex align-items-center justify-content-center">
+                    <div class="text-white fs-5 text-center w-100">Visão:</div>
+                </div>
+                <div class="flex-grow-1 d-flex align-items-center justify-content-center">
+                    <div class="bullet-container text-white w-100">
+                        <ul class="custom-list mb-0 pe-4 fs-6">
+                            <li>Se tornar um local seguro para promover períodos de estágios para preparação de novos profissionais.</li>
+                            <li>Promover extensão no município e outras cidades com intercomunicação via Instituto Federal.</li>
+                            <li>Se tornar uma provedora de serviços com clientes rotativos e fixos para auxiliar no ganho de horas dos clientes.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quadrant d-flex w-100 h-auto py-4">
+                <div class="title-column d-flex align-items-center justify-content-center">
+                    <div class="text-white fs-5 text-center w-100">Objetivos<br>Alcançados:</div>
+                </div>
+                <div class="flex-grow-1 d-flex align-items-center justify-content-center">
+                    <div class="bullet-container text-white w-100">
+                        <ul class="custom-list mb-0 pe-4 fs-6">
+                            <li>Parceria estabelecida com o IFSP São Carlos, para promover extensão.</li>
+                            <li>Parceria oficial com o Automation Edge para promoção da ferramenta e desenvolvimento de RPA.</li>
+                            <li>Parceria com a OBR para desenvolvimento de um MVP de melhoria de processos.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </main>
     
-    <footer class="footer-bg py-3 px-4 d-flex align-items-center justify-content-between flex-shrink-0 mt-auto">
+    <footer class="footer-bg py-3 px-4 d-flex align-items-center justify-content-between mt-auto">
         <div class="d-flex align-items-center gap-3">
+            
             <img src="logo.png" alt="Logo RPA For Everyone" style="height: 50px; width: auto; object-fit: contain;">
+            
             <div class="brand-box text-white py-2 px-3 fw-bold">
                 RPA For Everyone
             </div>
@@ -78,15 +130,9 @@
         </div>
 
         <div class="d-flex gap-3">
-            <a href="https://wa.me/SEUNUMERO" target="_blank" class="footer-square">
-                <i class="bi bi-whatsapp"></i>
-            </a>
-            <a href="https://instagram.com/SEUPERFIL" target="_blank" class="footer-square">
-                <i class="bi bi-instagram"></i>
-            </a>
-            <a href="mailto:foreveryonepa@gmail.com" class="footer-square">
-                <i class="bi bi-envelope-plus-fill"></i>
-            </a>
+            <div class="footer-square"></div>
+            <div class="footer-square"></div>
+            <div class="footer-square"></div>
         </div>
     </footer>
 
