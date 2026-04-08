@@ -190,18 +190,18 @@ body {
 }
 
 .produto-text {
-    font-size: medium; 
+    font-size:large; 
     transition: font-size 0.3s ease, line-height 0.3s ease;
 }
 
 /* Se a tela do usuário for de notebook (mais baixa) */
 @media (max-height: 850px) {
     .produto-text {
-        font-size: medium; 
+        font-size: large; 
     }
     
     .title-responsive {
-        font-size: 1.2rem !important; 
+        font-size: medium !important; 
         white-space: normal !important; /* Deixa o título quebrar de linha se precisar */
     }
 
@@ -215,7 +215,7 @@ body {
     }
 
     .title-responsive {
-        font-size: 1rem !important;
+        font-size: small !important;
         white-space: normal !important;
     }
 }
