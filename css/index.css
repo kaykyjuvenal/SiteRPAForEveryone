@@ -56,6 +56,49 @@ body {
     display: flex;
 }
 
+/* ==========================================================
+   RESPONSIVIDADE DOS TEXTOS DA PÁGINA INICIAL (INDEX)
+   Baseado na largura da tela (Dispositivos)
+========================================================== */
+
+/* 1. Telas Maiores que Notebook (Padrão - "Medium") */
+.quadrant .fs-5 {
+    font-size: 1.25rem !important; /* Tamanho original do título fs-5 */
+    transition: font-size 0.3s ease; /* Transição suave caso redimensione a janela */
+}
+
+.quadrant .fs-6 {
+    font-size: 1rem !important; /* Tamanho original do texto fs-6 (Medium) */
+    transition: font-size 0.3s ease;
+}
+
+/* 2. Telas de Notebook (Abaixo de 1366px de largura) - "Small" */
+@media (max-width: 1366px) {
+    .quadrant .fs-5 {
+        font-size: 1.1rem !important; /* Reduz o título levemente */
+    }
+    
+    .quadrant .fs-6 {
+        font-size: 0.875rem !important; /* Reduz o texto para o equivalente a 'small' */
+    }
+}
+
+/* 3. Telas de Celulares (Abaixo de 430px - ex: iPhone Max) - "Small adaptado" */
+@media (max-width: 430px) {
+    .quadrant .fs-5 {
+        font-size: 1rem !important; /* Títulos ficam do tamanho do texto normal */
+    }
+    
+    .quadrant .fs-6 {
+        font-size: 0.75rem !important; /* Texto fica um pouco menor que small para caber na tela do celular */
+        line-height: 1.4; /* Aperta um pouco as linhas para economizar espaço vertical */
+    }
+    
+    /* Aproveita para diminuir o recuo da lista no celular e ganhar espaço */
+    .custom-list {
+        padding-left: 10px !important;
+    }
+}
 /* Define a largura de 80% que você solicitou */
 .w-80 {
     width: 80%;
