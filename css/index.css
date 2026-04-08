@@ -190,8 +190,8 @@ body {
 }
 /* Espaço reservado para a imagem do Workshop */
 .product-img-wrapper {
-    width: 40vw;  
-    height: 40vh; /* Altura ideal baseada na tela */
+    width: 60vw;  
+    height: 60vh; /* Altura ideal baseada na tela */
     display: flex;
     justify-content: center;
     align-items: center;
