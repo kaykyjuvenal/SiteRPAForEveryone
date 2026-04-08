@@ -184,6 +184,10 @@ body {
     line-height: 1.6;
 }
 
+/* Nova classe para garantir o texto justificado (reto nas bordas) */
+.custom-justify {
+    text-align: justify;
+}
 /* Espaço reservado para a imagem do Workshop */
 .product-img-wrapper {
     width: 60vw;  
