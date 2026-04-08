@@ -201,7 +201,7 @@ body {
     }
     
     .title-responsive {
-        font-size: medium !important; 
+        font-size: large !important; 
         white-space: normal !important; /* Deixa o título quebrar de linha se precisar */
     }
 
@@ -210,12 +210,12 @@ body {
 /* Se a tela for muito pequena */
 @media (max-height: 650px) {
     .produto-text {
-        font-size: small; 
+        font-size: medium; 
         line-height: 1.4;
     }
 
     .title-responsive {
-        font-size: small !important;
+        font-size: medium !important;
         white-space: normal !important;
     }
 }
