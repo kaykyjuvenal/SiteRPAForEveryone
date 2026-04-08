@@ -190,14 +190,14 @@ body {
 }
 
 .produto-text {
-    font-size: 1.25rem; 
+    font-size: medium; 
     transition: font-size 0.3s ease, line-height 0.3s ease;
 }
 
 /* Se a tela do usuário for de notebook (mais baixa) */
 @media (max-height: 850px) {
     .produto-text {
-        font-size: 0.95rem; 
+        font-size: medium; 
     }
     
     .title-responsive {
@@ -210,7 +210,7 @@ body {
 /* Se a tela for muito pequena */
 @media (max-height: 650px) {
     .produto-text {
-        font-size: 0.85rem; 
+        font-size: small; 
         line-height: 1.4;
     }
 
