@@ -173,69 +173,59 @@ body {
     object-fit: contain;
 }
  
-/* --- ESTILOS ESPECÍFICOS DA PÁGINA DE PRODUTOS --- */
+
+/* ==========================================================
+   ESTILOS ESPECÍFICOS DA PÁGINA DE PRODUTOS
+========================================================== */
 
 /* Controla a largura máxima da caixa de texto */
 .product-text {
-    /* Substituído 900px por % em relação à tela/container */
     max-width: 75%; 
     line-height: 1.6;
 }
 
-/* Nova classe para garantir o texto justificado (reto nas bordas) */
-.custom-justify {
-    text-align: justify;
-}
-
-/* Espaço reservado para as imagens em formato de banner/wide */
+/* Espaço reservado para a imagem do Workshop */
 .product-img-wrapper {
-    /* Substituído 800px e 250px por VW e VH */
     width: 60vw;  
-    height: 25vh; 
+    height: 35vh; /* Altura ideal baseada na tela */
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 0.2vw dashed rgba(255, 255, 255, 0.3); 
     background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 0.3vw;
+    border-radius: 0.5vw;
     overflow: hidden;
+    transition: width 0.3s ease, height 0.3s ease;
 }
 
-/* Ajusta a foto para cobrir todo o banner sem ser achatada */
 .product-banner {
     width: 100%;
     height: 100%;
     object-fit: cover; 
 }
-/* ==========================================================
-   RESPONSIVIDADE DA PÁGINA DE PRODUTOS
-========================================================== */
 
 .produto-text {
-    font-size: 1.25rem; /* Padrão fs-5 */
+    font-size: 1.25rem; 
     transition: font-size 0.3s ease, line-height 0.3s ease;
 }
 
-/* Quando a tela tiver menos de 850px de altura (Notebooks) */
+/* Se a tela do usuário for de notebook (mais baixa) */
 @media (max-height: 850px) {
     .produto-text {
         font-size: 0.95rem; 
     }
     
     .title-responsive {
-        font-size: 1.2rem !important; /* Diminui o título do workshop */
-        /* Retira o nowrap se a tela não couber o texto todo em uma linha */
-        white-space: normal !important; 
+        font-size: 1.2rem !important; 
+        white-space: normal !important; /* Deixa o título quebrar de linha se precisar */
     }
 
-    /* Reduz um pouco o tamanho da imagem do banner para sobrar mais espaço pro texto */
     .product-img-wrapper {
-        width: 70vw;  
+        width: 75vw;  
         height: 35vh; 
     }
 }
 
-/* Quando a tela for muito achatada (menos de 650px) */
+/* Se a tela for muito pequena */
 @media (max-height: 650px) {
     .produto-text {
         font-size: 0.85rem; 
@@ -248,7 +238,7 @@ body {
     }
 
     .product-img-wrapper {
-        width: 80vw;  
+        width: 85vw;  
         height: 30vh; 
     }
 }
