@@ -188,24 +188,6 @@ body {
 .custom-justify {
     text-align: justify;
 }
-/* Espaço reservado para a imagem do Workshop */
-.product-img-wrapper {
-    width: 60vw;  
-    height: 60vh; /* Altura ideal baseada na tela */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 0.5vw;
-    overflow: hidden;
-    transition: width 0.3s ease, height 0.3s ease;
-}
-
-.product-banner {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
 
 .produto-text {
     font-size: 1.25rem; 
@@ -223,10 +205,6 @@ body {
         white-space: normal !important; /* Deixa o título quebrar de linha se precisar */
     }
 
-    .product-img-wrapper {
-        width: 75vw;  
-        height: 35vh; 
-    }
 }
 
 /* Se a tela for muito pequena */
@@ -239,11 +217,6 @@ body {
     .title-responsive {
         font-size: 1rem !important;
         white-space: normal !important;
-    }
-
-    .product-img-wrapper {
-        width: 85vw;  
-        height: 30vh; 
     }
 }
 
