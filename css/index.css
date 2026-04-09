@@ -56,9 +56,6 @@ body {
     display: flex;
 }
 
-/* ==========================================================
-   RESPONSIVIDADE DO HEADER (MENU MOBILE)
-========================================================== */
 
 /* ==========================================================
    RESPONSIVIDADE DO HEADER (MENU MOBILE)
@@ -117,7 +114,7 @@ body {
     }
     
     .quadrant .fs-6 {
-        font-size: 0.875rem !important; /* Reduz o texto para o equivalente a 'small' */
+        font-size: small !important; /* Reduz o texto para o equivalente a 'small' */
     }
 }
 
@@ -128,7 +125,7 @@ body {
     }
     
     .quadrant .fs-6 {
-        font-size: 0.75rem !important; /* Texto fica um pouco menor que small para caber na tela do celular */
+        font-size: smaller; /* Texto fica um pouco menor que small para caber na tela do celular */
         line-height: 1.4; /* Aperta um pouco as linhas para economizar espaço vertical */
     }
     
