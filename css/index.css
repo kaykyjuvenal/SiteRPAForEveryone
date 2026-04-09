@@ -118,34 +118,35 @@ body {
     }
 }
 
+/* 3. Tablets e Celulares Maiores (Abaixo de 991px) */
 @media (max-width: 991px) {
     .quadrant .fs-5 {
-        font-size:smaller !important; /* Títulos ficam do tamanho do texto normal */
+        font-size: smaller !important; 
     }
     
     .quadrant .fs-6 {
-        font-size: smaller; /* Texto fica um pouco menor que small para caber na tela do celular */
-        line-height: 1.4; /* Aperta um pouco as linhas para economizar espaço vertical */
+        font-size: smaller !important; /* CORREÇÃO: Faltava o !important aqui */
+        line-height: 1.4; 
     }
     
-    /* Aproveita para diminuir o recuo da lista no celular e ganhar espaço */
     .custom-list {
         padding-left: 10px !important;
     }
 }
 
-/* 3. Telas de Celulares (Abaixo de 430px - ex: iPhone Max) - "Small adaptado" */
+/* 4. Telas de Celulares (Abaixo de 430px - ex: iPhone Max) - "Small adaptado" */
 @media (max-width: 430px) {
     .quadrant .fs-5 {
-        font-size:x-small !important; /* Títulos ficam do tamanho do texto normal */
+        font-size: x-small !important; 
     }
     
-    .quadrant .fs-6 {
-        font-size: x-small; /* Texto fica um pouco menor que small para caber na tela do celular */
-        line-height: 1.4; /* Aperta um pouco as linhas para economizar espaço vertical */
+    /* Para garantir que atinja os itens da lista <li> dentro da tag <ul> */
+    .quadrant .fs-6, 
+    .quadrant .fs-6 li {
+        font-size: x-small !important; /* CORREÇÃO: Faltava o !important aqui */
+        line-height: 1.4; 
     }
     
-    /* Aproveita para diminuir o recuo da lista no celular e ganhar espaço */
     .custom-list {
         padding-left: 10px !important;
     }
