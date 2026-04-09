@@ -222,11 +222,17 @@ body {
     /* Substituído 4px por vw */
     border-radius: 0.3vw;
 }
+/* ==========================================================
+   ESTILOS GERAIS DO FOOTER E PARCEIROS
+========================================================== */
 
 .footer-square {
-    /* Substituído 40px por vw */
+    /* O vw é ótimo para telas grandes */
     width: 2.5vw;
     height: 2.5vw;
+    /* Adicionamos um mínimo de pixels para nunca sumir caso a tela diminua um pouco */
+    min-width: 35px;
+    min-height: 35px;
     background-color: #212c42;
     border-radius: 0.3vw;
     display: flex;
@@ -234,10 +240,10 @@ body {
     justify-content: center;
     text-decoration: none;
     color: white;
-    transition: opacity 0.3s;
+    font-size: calc(0.8rem + 0.3vw); /* Ícone escala com a tela */
+    transition: opacity 0.3s, transform 0.3s ease;
 }
 
-/* Correção de sintaxe: o hover fica fora da classe principal no CSS puro */
 .footer-square:hover {
     opacity: 0.8;
 }
@@ -249,25 +255,46 @@ body {
 
 /* Espaço reservado para os logos (IFSP e Automation Edge) */
 .partner-img-wrapper {
-    /* Substituído 280px e 180px por unidades de Viewport */
     width: 20vw;  
     height: 20vh; 
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Borda tracejada adaptada de px para vw */
     border: 0.2vw dashed rgba(255, 255, 255, 0.3); 
     border-radius: 0.6vw;
     padding: 1.5vw;
 }
 
-/* Garante que a imagem inserida não passe do tamanho da caixa e não fique esticada/feia */
 .partner-logo {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
 }
- 
+
+/* ==========================================================
+   RESPONSIVIDADE DO FOOTER (TABLETS E CELULARES)
+========================================================== */
+
+/* Quando a tela tiver menos de 992px (Tablets para baixo) */
+@media (max-width: 991px) {
+    .footer-square {
+        /* Abandona o VW e usa Pixels para garantir um tamanho fixo grande e clicável com o dedo */
+        width: 45px;
+        height: 45px;
+        border-radius: 8px; /* Arredondamento padrão para mobile */
+        font-size: 1.5rem; /* Aumenta bastante o ícone do WhatsApp/Instagram */
+    }
+}
+
+/* Telas muito pequenas (Celulares menores que 430px) */
+@media (max-width: 430px) {
+    .footer-square {
+        /* Fica ainda um pouco maior para compensar o espaço vazio do copyright */
+        width: 50px;
+        height: 50px;
+        font-size: 1.8rem;
+    }
+}
 
 /* ==========================================================
    ESTILOS ESPECÍFICOS DA PÁGINA DE PRODUTOS
