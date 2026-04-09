@@ -15,25 +15,32 @@
 </head>
     <body class="d-flex flex-column min-vh-100">
 
-    <header class="header-bg py-2 px-4 flex-shrink-0">
-        <nav class="d-flex align-items-center justify-content-between w-100 flex-nowrap overflow-auto">
+    <header class="header-bg flex-shrink-0">
+        <nav class="navbar navbar-expand-lg navbar-dark w-100 d-flex justify-content-center px-3 py-2">
             
-            <img src="logo.png" alt="Logo RPA For Everyone" class="flex-shrink-0" style="height: 65px; width: auto; object-fit: contain;">
-            
-            <div class="brand-box text-white py-2 px-3 fw-bold text-nowrap mx-3">
-                RPA For Everyone
-            </div>
-            
-            <a href="index.html" class="nav-btn text-nowrap">Inicial</a>
-            <a href="produtos.html" class="nav-btn text-nowrap">Produtos</a>
-            <a href="serviços.html" class="nav-btn text-nowrap">Serviços</a>
-            <a href="parceiros.html" class="nav-btn active text-nowrap">Parceiros</a>
-            <a href="contato.html" class="nav-btn text-nowrap">Contato</a>
-            <a href="licenciamento.html" class="nav-btn text-nowrap">Licenciamento</a>
-        </nav>
+            <a class="navbar-brand d-flex align-items-center gap-2 m-0 text-decoration-none mx-auto mx-lg-0" href="index.html">
+                <img src="logo.png" alt="Logo RPA For Everyone" style="height: 6vh; width: auto; object-fit: contain;">
+                <div class="brand-box text-white py-2 px-3 fw-bold text-nowrap">
+                    RPA For Everyone
+                </div>
+            </a>
+
             <button class="navbar-toggler ms-auto border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Alternar navegação">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="menuPrincipal">
+                <div class="navbar-nav align-items-center gap-2 mt-3 mt-lg-0">
+                    <a href="index.html" class="nav-btn active text-nowrap">Inicial</a>
+                    <a href="produtos.html" class="nav-btn text-nowrap">Produtos</a>
+                    <a href="serviços.html" class="nav-btn text-nowrap">Serviços</a>
+                    <a href="parceiros.html" class="nav-btn text-nowrap">Parceiros</a>
+                    <a href="contato.html" class="nav-btn text-nowrap">Contato</a>
+                    <a href="licenciamento.html" class="nav-btn text-nowrap">Licenciamento</a>
+                </div>
+            </div>
+
+        </nav>
     </header>
 
         <main class="d-flex flex-grow-1 overflow-hidden">
