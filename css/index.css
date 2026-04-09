@@ -60,39 +60,38 @@ body {
    RESPONSIVIDADE DO HEADER (MENU MOBILE)
 ========================================================== */
 
-/* Remove a borda padrão feia do botão mobile do Bootstrap ao ser clicado */
+/* ==========================================================
+   RESPONSIVIDADE DO HEADER (MENU MOBILE)
+========================================================= */
+
+/* Remove a borda padrão do Bootstrap ao clicar no botão mobile */
 .navbar-toggler:focus {
     box-shadow: none;
 }
 
-/* Regras aplicadas apenas quando a tela for menor que 992px (Tablets e Celulares) */
+/* Regras aplicadas para telas menores que 992px (Celulares/Tablets) */
 @media (max-width: 991px) {
-    /* Adiciona uma linha suave separando a logo dos links quando o menu abre */
-    #menuPrincipal {
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
-        margin-top: 15px;
-        padding-top: 15px;
-        padding-bottom: 10px;
+    /* 1. Títulos e Texto Escaláveis (Unidades vw/vh) */
+    .brand-box {
+        font-size: calc(0.8rem + 0.5vw); /* Escala suave baseada na largura da tela */
+        padding: 1.5vh 3vw !important; /* Paddings verticais/horizontais fluidores */
     }
 
-    /* Faz os botões ocuparem 100% do espaço e centraliza o texto no celular */
-    .nav-btn {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 5px; /* Dá um espacinho entre um botão e outro */
-        padding: 10px 0; /* Aumenta a área de clique para o dedo */
+    .navbar-brand img {
+        height: 5vh !important; /* Logo diminui levemente no celular */
     }
+
+    /* 2. Botão Mobile (Hambúrguer) Fixo no Canto Inferior Direito */
+    /* Este botão é inserido via JavaScript, ou você pode adicioná-lo no HTML conforme sua preferência, 
+       mas para um menu hambúrguer flutuante, a melhor forma é via JavaScript para manipulação do estado. 
+       Para esta solução, vamos adicionar o botão no HTML no rodapé para simplificar */
 }
 
-/* Regra extra para telas MUITO pequenas (Celulares estreitos) */
+/* Regra para telas MUITO pequenas (Celulares estreitos) */
 @media (max-width: 450px) {
-    /* Diminui um pouco a logo e a caixa da marca para caber o botão do lado sem quebrar */
-    .navbar-brand img {
-        height: 50px !important;
-    }
+    /* Diminui o padding da marca para não espremer a logo */
     .brand-box {
-        font-size: 0.85rem;
-        padding: 6px 10px !important;
+        padding: 1vh 2vw !important;
     }
 }
 /* ==========================================================
