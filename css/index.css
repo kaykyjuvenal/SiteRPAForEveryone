@@ -389,56 +389,55 @@ main h2 {
     transition: font-size 0.3s ease, margin 0.3s ease, padding 0.3s ease;
 }
 
-/* Quando a tela tiver menos de 850px de altura (Notebooks padrão) */
-@media (max-height: 850px) {
-    /* Diminui o título 'Equipe' e o espaço abaixo dele */
-    main h2.fs-3 {
-        font-size: 1.5rem !important;
-        margin-bottom: 3vh !important; 
+/* ==========================================================
+   RESPONSIVIDADE DA LARGURA DA EQUIPE (TABLETS E CELULARES)
+========================================================== */
+
+/* Quando a tela tiver menos de 992px (Tablets e Celulares em pé ou deitados) */
+@media (max-width: 991px) {
+    /* O container w-80 é muito estreito para mobile, vamos usar 95% da tela */
+    .w-80 {
+        width: 95% !important;
     }
 
-    /* Reduz os nomes e cargos da equipe */
-    .team-card p.small {
-        font-size: 0.75rem; 
+    /* MÁGICA DOS 3 POR LINHA: 
+       A largura passa a ser 1/3 da tela, descontando o espaço do gap. */
+    .team-card {
+        width: calc(33.33% - 1.5rem) !important;
+        min-width: 90px; /* Limite de segurança para não sumir na tela */
     }
 
-    /* Reduz o texto da caixa azul de contato */
-    .contact-cta-box p {
-        font-size: 0.85rem; 
+    /* Abandona o 'vw' fixo. Ocupa a largura total do card e mantém o formato quadrado! */
+    .team-photo-placeholder {
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 1 / 1; 
     }
 
-    /* Diminui o padding interno da caixa de contato para economizar espaço */
+    /* Expande a caixa de contato para a leitura não ficar espremida */
     .contact-cta-box {
-        padding: 2vh 3vw !important;
+        max-width: 95% !important;
     }
 }
 
-/* Quando a tela for extremamente baixa (menos de 650px) */
-@media (max-height: 650px) {
-    /* Deixa o título principal ainda menor */
-    main h2.fs-3 {
-        font-size: 1.25rem !important;
-        margin-bottom: 2vh !important;
+/* Ajustes finos para celulares menores (ex: iPhone, Androids estreitos) */
+@media (max-width: 450px) {
+    /* Diminuímos o gap (espaçamento) do Bootstrap (gap-4) para um menor para caber melhor */
+    .w-80.d-flex.gap-4 {
+        gap: 0.8rem !important;
     }
 
-    /* Reduz a fonte da equipe ao mínimo legível */
+    /* Recalcula a largura de 3 por linha com base no novo espaçamento menor */
+    .team-card {
+        width: calc(33.33% - 0.8rem) !important;
+    }
+
+    /* Diminui a fonte do nome e cargo para caber direitinho na coluna estreita */
     .team-card p.small {
-        font-size: 0.65rem; 
+        font-size: 0.65rem !important;
         line-height: 1.2;
     }
-
-    /* Deixa o texto de contato bem compacto */
-    .contact-cta-box p {
-        font-size: 0.75rem; 
-    }
-    
-    /* Espaço entre os cartões (gap) diminui para os itens subirem um pouco */
-    .w-80.d-flex.gap-4 {
-        gap: 1.5vw !important;
-        margin-bottom: 1.5vh !important;
-    }
 }
-
 /* --- RESPONSIVIDADE DO TEXTO DE LICENCIAMENTO BASEADA NA ALTURA --- */
 
 .licenciamento-text {
